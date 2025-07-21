@@ -1,0 +1,81 @@
+section {
+  background-image: url(../assets/Louis_VuittonTienda.jpg);
+  position: cover;
+  height: 100vh;
+}
+.logo {
+  max-width: 300px;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Para centrar */
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+.panel-izquierda {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.panel-derecha {
+  background-color: #e0e0e0;
+  padding: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 5%;
+  justify-content: center;
+  align-items: center;
+}
+a:hover {
+  transform: scale(1.2);
+  transition: all 0.4s ease-in-out;
+}
+.changeinput {
+  width: 50%;
+}
+.panel-derecha {
+  background-image: url(../assets/Model-login.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.icon-link {
+  color: #000;
+  text-decoration: none;
+  display: inline-block;
+  transition: transform 0.3s ease;
+  background-color: rgb(155, 152, 155);
+  border-radius: 50%;
+  padding: 8px;
+}
+@media (max-width: 575px) {
+  .container {
+    flex-direction: column;
+  }
+  .panel-derecha {
+    display: none;
+  }
+  .panel-izquierda {
+    border-radius: 20px;
+
+    min-height: 80vh;
+  }
+}
+@media (max-width: 1025px) {
+  form {
+    margin-top: 0;
+  }
+  .logo {
+    max-width: 180px;
+  }
+}
