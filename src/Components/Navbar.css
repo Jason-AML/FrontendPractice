@@ -1,4 +1,17 @@
-.logo-nav {
-  max-width: 50px;
-  height: auto;
+.lv-logo path {
+  fill: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navi-link {
+  text-decoration: none;
+  color: white;
+}
+.sv-logo {
+  width: 151px;
+  height: 16px;
+
+  margin-top: 10px;
+  margin-bottom: 10px;
 }

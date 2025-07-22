@@ -1,10 +1,13 @@
 import Navbar from "../Components/Navbar";
+import { Slider } from "../Components/Slider";
+import { Cards } from "../Components/Cards";
 
 export const Home = () => {
   return (
     <div>
       <Navbar />
-      <h1>Home</h1>
+      <Slider />
+      <Cards />
     </div>
   );
 };
