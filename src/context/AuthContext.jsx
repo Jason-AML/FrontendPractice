@@ -1,6 +1,6 @@
 // src/context/AuthContext.jsx
 import { createContext, useEffect, useState, useContext } from "react";
-import { auth } from "../../firebase/firebaseconf"; // Ajusta la ruta según tu estructura de carpetas
+import { auth } from "../../firebase/firebaseconf";
 import { onAuthStateChanged } from "firebase/auth";
 
 const AuthContext = createContext();

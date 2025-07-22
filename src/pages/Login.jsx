@@ -6,7 +6,7 @@ import {
   signInWithEmailAndPassword,
 } from "firebase/auth";
 import { BtnVolver } from "../Components/UI/BntVoler";
-import { auth } from "../../firebase/firebaseconf"; // Ajusta la ruta según tu estructura de carpetas
+import { auth } from "../../firebase/firebaseconf";
 import { useNavigate } from "react-router-dom";
 export const Login = () => {
   const [email, setEmail] = useState("");
@@ -22,7 +22,6 @@ export const Login = () => {
       })
       .catch((error) => {
         if (error.code === "auth/email-already-in-use") {
-          // Intenta iniciar sesión automáticamente
           signInWithEmailAndPassword(auth, email, password)
             .then((userCredential) => {
               console.log("Inicio de sesión exitoso:", userCredential.user);
