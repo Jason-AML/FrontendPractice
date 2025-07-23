@@ -5,7 +5,7 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-import { BtnVolver } from "../Components/UI/BntVoler";
+import { BtnVolver } from "../Components/UI/BtnVoler";
 import { auth } from "../../firebase/firebaseconf";
 import { useNavigate } from "react-router-dom";
 export const Login = () => {
