@@ -1,4 +1,3 @@
-// src/context/AuthContext.jsx
 import { createContext, useEffect, useState, useContext } from "react";
 import { auth } from "../../firebase/firebaseconf";
 import { onAuthStateChanged } from "firebase/auth";
@@ -13,7 +12,7 @@ export const AuthProvider = ({ children }) => {
       setUser(firebaseUser);
     });
 
-    return () => unsubscribe(); // limpiar suscripción
+    return () => unsubscribe();
   }, []);
 
   return (
@@ -21,5 +20,4 @@ export const AuthProvider = ({ children }) => {
   );
 };
 
-// Hook para consumir el contexto
 export const useAuth = () => useContext(AuthContext);

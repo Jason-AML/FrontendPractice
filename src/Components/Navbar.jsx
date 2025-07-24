@@ -15,7 +15,7 @@ export default function Navbar() {
           </svg>
         </div>
 
-        {/* Botón hamburguesa (solo visible en pantallas pequeñas) */}
+        {/* Botón hamburguesa  */}
         <button
           className="md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}

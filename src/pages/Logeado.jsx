@@ -20,7 +20,6 @@ export const Logeado = () => {
 
   return (
     <div className="h-screen bg-green-200 text-black flex flex-col items-center justify-center">
-      <h2 className="text-2xl font-bold mb-4">Bienvenido</h2>
       {user ? (
         <>
           <p>
@@ -34,7 +33,9 @@ export const Logeado = () => {
           </button>
         </>
       ) : (
-        navigate("/Login") // Redirige al login si no hay usuario
+        <div>
+          <h3>Usuario no autenticado</h3>
+        </div>
       )}
     </div>
   );
