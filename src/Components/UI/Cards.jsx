@@ -5,7 +5,7 @@ export const Cards = ({ productos }) => {
     <div className="cards-container">
       {productos.slice(0, 5).map((producto) => (
         <div
-          className="card1 col-12 col-sm-6 col-lg-6 col-xl-3"
+          className="card1 col-12 col-sm-6 col-lg-6 col-xl-4"
           key={producto.id}
         >
           <img src={producto.image} alt={producto.category} />

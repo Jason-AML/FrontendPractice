@@ -1,8 +1,7 @@
-import { fetchProductos } from "../hooks/fetchProductos";
+import { useProductos } from "../hooks/fetchProductos";
 import { Cards } from "../Components/UI/Cards";
 export const Productos = () => {
-  const API_URL = "https://fakestoreapi.com/products";
-  const { productos } = fetchProductos(API_URL);
+  const { productos } = useProductos();
   return (
     <div>
       <div className="flex justify-content-center py-5">
